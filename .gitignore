@@ -1,0 +1,18 @@
+
+# Python virtual environment
+venv/
+.venv/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+                                                                     
+# Environment variables and secrets
+.env
+
+# IDE settings
+.vscode/
+
+# Existing project metadata
+.meta-panel-trigger
+meta.bat
