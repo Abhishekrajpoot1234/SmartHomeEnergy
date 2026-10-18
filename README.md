@@ -60,8 +60,17 @@ The project compares multiple Machine Learning models using validation data and 
 ## Dataset
 The project uses household appliance energy consumption data. If the local dataset is unavailable, the data-loading scripts may retrieve it from the configured online source.
 
+
+
 ## Future Improvements
-- Improve model accuracy
-- Add more informative dashboard visualizations
-- Experiment with additional features and models
-- Improve prediction performance during high-consumption periods
+
+- Improve model accuracy through hyperparameter tuning.
+- Add more informative dashboard visualizations.
+- Experiment with additional features and machine learning models.
+- Improve prediction performance during high-consumption periods.
+- Add real-time energy consumption monitoring using IoT sensors.
+- Develop an interactive interface for predicting energy consumption from user inputs.
+- Add model performance comparison charts and downloadable reports.
+- Implement alerts for unusually high energy consumption.
+- Optimize the application for faster predictions and better usability.
+- Deploy the Streamlit application online for public access.
