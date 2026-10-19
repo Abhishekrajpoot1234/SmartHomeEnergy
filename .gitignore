@@ -16,3 +16,9 @@ __pycache__/
 # Existing project metadata
 .meta-panel-trigger
 meta.bat
+
+# Generated project data and model outputs
+outputs/*.csv
+
+# Local project metadata
+meta

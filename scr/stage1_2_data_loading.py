@@ -10,6 +10,11 @@ DATA_URL = "https://raw.githubusercontent.com/LuisM78/Appliances-energy-predicti
 try:
     energy_df = pd.read_csv(DATA_URL)
     print("Dataset loaded successfully!")
+
+    energy_df.to_csv("data/energy.csv", index=False)
+    print("Dataset saved successfully!")
+    print("Saved dataset shape:", energy_df.shape)
+
 except Exception as exc:
     raise RuntimeError(
         "Dataset load nahi hua. Internet connection check karo."

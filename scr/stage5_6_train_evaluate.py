@@ -248,3 +248,27 @@ print(y_test.describe())
 
 print("\nResults saved in:", OUTPUT_DIR)
 print("\nStage 5-6 completed successfully!")
+
+
+# 14. Check high-consumption predictions on validation data
+print("\nHigh-consumption validation analysis:")
+
+val_results = pd.DataFrame({
+    "Actual": y_val.to_numpy(),
+    "Predicted": validation_predictions[best_model_name]
+})
+
+high_usage = val_results[val_results["Actual"] > 300]
+
+print("Actual readings above 300 Wh:", len(high_usage))
+print(
+    "Mean actual:",
+    round(high_usage["Actual"].mean(), 2)
+)
+print(
+    "Mean predicted:",
+    round(high_usage["Predicted"].mean(), 2)
+)
+
+print("\nFirst 10 high-consumption validation predictions:")
+print(high_usage.head(10).round(2).to_string(index=False))
